@@ -1,0 +1,28 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+      <label>Ticket Id:
+      </label><input matInput >{{ service.selectedRecord.id }}
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      Category:<br>
+      <input matInput  >{{ service.selectedRecord.category }}
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        Reported By:<br>
+        <input matInput >{{ service.selectedRecord.reportedBy }}
+      </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    Description:<br>
+    <input matInput >{{ service.selectedRecord.description }}
+  </mat-form-field>
+
+  
+<div class="example-button-row">
+  <button mat-raised-button color="primary" (click)="goBack()">Back</button>
+  
+  
+</div>
+</form>
